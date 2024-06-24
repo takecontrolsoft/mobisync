@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Mobi Sync',
-  tagline: 'Automatic wireless sync from devices to home server',
+  tagline: 'Wireless sync from devices to home server',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

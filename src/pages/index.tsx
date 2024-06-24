@@ -10,17 +10,18 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero hero', styles.heroBanner)}>
       <div className="container">
+        <img src={siteConfig.themeConfig.image} alt="Mobi Sync"/>
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          {siteConfig.title} - {siteConfig.tagline}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p></p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary button--lg"
             to="/docs/intro">
-            Tutorial - 5min ⏱️
+            Getting started
           </Link>
         </div>
       </div>
@@ -35,9 +36,9 @@ export default function Home(): JSX.Element {
       title={`${siteConfig.title}`}
       description="Mobile devices sync to local server">
       <HomepageHeader />
-      <main>
+      {/* <main>
         <HomepageFeatures />
-      </main>
+      </main> */}
     </Layout>
   );
 }
