@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Mobi Sync',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Automatic wireless sync from devices to home server',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -15,8 +15,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'takecontrolsoft', // Usually your GitHub org/user name.
+  projectName: 'mobisync', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -38,17 +38,26 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/takecontrolsoft/mobisync/tree/main/docs/',
         },
         blog: {
-          showReadingTime: true,
+          blogTitle: 'Mobi Sync Blog',
+          blogDescription: 'Mobi Sync announcements',
+          postsPerPage: 'ALL',
+          blogSidebarTitle: 'Posts',
+          blogSidebarCount: 'ALL',
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+            'https://github.com/takecontrolsoft/mobisync/tree/main/blog/',
+       },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        gtag: {
+          trackingID: 'G-Z4RNKLR00E',
+          anonymizeIP: true,
         },
       } satisfies Preset.Options,
     ],
@@ -56,7 +65,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/mobisync-social-card.jpg',
     navbar: {
       title: 'Mobi Sync',
       logo: {
