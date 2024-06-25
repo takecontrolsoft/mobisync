@@ -98,8 +98,8 @@ const config: Config = {
               to: '/docs/intro',
             },
             {
-              label: 'Installation',
-              to: '/docs/category/installation',
+              label: 'Terms and condition',
+              to: '/terms-and-condition',
             },
           ],
         },
