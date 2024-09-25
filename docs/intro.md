@@ -13,7 +13,7 @@ Look at the instructions https://mobisync.eu/docs/category/installation
 
 ## Watch the first demo of MobiSync
 
-<video controls src="https://takecontrolsoft.eu/assets/Video/MobiSync_v1demo.mp4" height="600px" title="Demo video"></video>
+<video controls src="https://youtu.be/kq25EwQDACA" height="600px" title="Demo video"></video>
 
 ### What you'll need
 
