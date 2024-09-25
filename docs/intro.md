@@ -1,7 +1,10 @@
 ---
 sidebar_position: 1
 ---
+```mdx-code-block
+import ReactPlayer from 'react-player'
 
+```
 # Tutorial Intro
 
 Let's discover **Mobi Sync in less than 5 minutes**.
@@ -13,7 +16,8 @@ Look at the instructions https://mobisync.eu/docs/category/installation
 
 ## Watch the first demo of MobiSync
 
-<video controls src="https://youtu.be/kq25EwQDACA" height="600px" title="Demo video"></video>
+
+<ReactPlayer playing controls url='https://youtu.be/kq25EwQDACA' height="600px" width="280px" title="Demo video"/>
 
 ### What you'll need
 
