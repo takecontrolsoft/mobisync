@@ -16,7 +16,12 @@ docker pull takecontrolorg/sync_server
 
 ## To run docker image "mobisync" run:
 ```bash
-sudo docker run --name mobisync -p 3000:3000 --mount type=bind,source=/mobisync,target=/data -e "LOG_LEVEL=3" takecontrolorg/sync_server:latest --add-host host.docker.internal:host-gateway
+sudo mkdir mobisync
+cd mobisync
+sudo mkdir photos
+sudo mkdir logs
+cd /
+sudo docker run --name mobisync -p 3000:3000 --mount type=bind,source=/mobisync,target=/mobisync -e "LOG_LEVEL=3" takecontrolorg/sync_server:latest
 ```
 
 
