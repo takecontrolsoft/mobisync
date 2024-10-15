@@ -21,12 +21,19 @@ cd mobisync
 sudo mkdir photos
 sudo mkdir logs
 cd /
-sudo docker run --name mobisync -p 3000:3000 --mount type=bind,source=/mobisync,target=/mobisync -e "LOG_LEVEL=3" takecontrolorg/sync_server:latest
+sudo docker run --name mobisync -p 3000:3000 --mount type=bind,source=/mobisync,target=/sync_server/data -e "LOG_LEVEL=3" takecontrolorg/sync_server:latest
 ```
 
 
   * Helper commands: 
     * To list docker images run: `docker images`
+
+    * To delete container instance run: 
+    
+```bash
+  sudo docker stop /mobisync
+  sudo docker rm /mobisync
+```
 
     * To delete docker image "mobisync" run: `docker rmi takecontrolorg/sync_server:latest -f`
 
