@@ -9,6 +9,8 @@ import ReactPlayer from 'react-player'
 
 Let's discover **Mobi Sync in less than 5 minutes**.
 
+Download and install: [client app](installation/msc1.0.9.4.apk)
+
 ## Getting Started
 
 Get started by **running a new server**.
